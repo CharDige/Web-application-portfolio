@@ -46,3 +46,10 @@ nav a {
 nav li {
     font-size: 20px;
 }
+
+/* Figure and hero image element selector and styling */
+figure #hero {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
