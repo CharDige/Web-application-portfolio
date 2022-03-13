@@ -6,6 +6,12 @@
     --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Highlight color and background */
+::selection {
+    background-color: var(--highlight-color);
+    color: var(--dark-heading-color);
+}
+
 /* Body element selector */
 body {
     background-color: #fff;
@@ -28,11 +34,12 @@ h1 {
 }
 
 /* Navigation element in header styling */
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    right: 0;
+    right: 20px;
 }
 
 nav ul li {
@@ -52,4 +59,45 @@ figure #hero {
     height: 150px;
     width: 100%;
     object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+main {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+p {
+    font-family: var(--font-family);
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    line-height: 20px;
+}
+
+h2 {
+    color: var(--dark-heading-color);
+    font-family: var(--font-family);
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.main-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph-box {
+    margin-left: 150px;
+    padding-left: 50px;
+    border-left: 5px solid var(--dark-heading-color);
+    position: relative;
+    top: -50px;
+    left: 70px;
 }
