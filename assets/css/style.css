@@ -1,0 +1,48 @@
+/* Main colors, formatting and styling repeated throughtout website */
+:root {
+    --dark-heading-color: #003204;
+    --light-heading-color: #fff;
+    --highlight-color: #01fe44;
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Body element selector */
+body {
+    background-color: #fff;
+}
+
+/* Header element styling */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--dark-heading-color);
+    font-family: var(--font-family)
+}
+
+/* H1 selector and styling */
+h1 {
+    font-size: 40px;
+    color: var(--light-heading-color);
+}
+
+/* Navigation element in header styling */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--light-heading-color)
+}
+
+nav li {
+    font-size: 20px;
+}
