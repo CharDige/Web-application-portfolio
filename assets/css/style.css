@@ -4,6 +4,7 @@
     --light-heading-color: #fff;
     --highlight-color: #01fe44;
     --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --body-margin: 100px;
 }
 
 /* Highlight color and background */
@@ -29,6 +30,9 @@ header {
 
 /* H1 selector and styling */
 h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
     font-size: 40px;
     color: var(--light-heading-color);
 }
@@ -39,7 +43,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    right: 20px;
+    right: 0;
 }
 
 nav ul li {
@@ -64,9 +68,7 @@ figure #hero {
 
 /* Main content styling */
 main {
-    margin-left: 100px;
     margin-top: 10px;
-    margin-right: 100px;
 }
 
 p {
@@ -93,17 +95,47 @@ section {
     flex-wrap: wrap;
 }
 
+.main-box-title {
+    margin-left: var(--body-margin);
+    margin-right: var(--body-margin);
+}
+
 .paragraph-box {
-    margin-left: 150px;
+    margin-left: 250px;
+    margin-right: var(--body-margin);
     padding-left: 50px;
     border-left: 5px solid var(--dark-heading-color);
     position: relative;
     top: -50px;
-    left: 70px;
+    left: 50px;
 }
 
 /* Footer styling */
 footer p {
     text-align: center;
     font-size: 12px;
+}
+
+/* Media queries for responsive header and navigation */
+@media screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
+    
+    h1 {
+        width: auto;
+    }
+
+    nav ul {
+        position: initial;
+        margin-top: 15px;
+}
+
+/* Media queries of responsive main content */
+@media screen and (max-width: 768px) {
+    .paragraph-box {
+        position: static;
+        margin-left: var(--body-margin);
+        margin-right: 75px;
+    }
 }
