@@ -120,10 +120,6 @@ section {
     left: 50px;
 }
 
-.work-collection a {
-    text-decoration-color: var(--light-heading-color);
-}
-
 /* Feature work styling */
 .feature-work img {
     width: 100%;
@@ -195,6 +191,20 @@ section {
     font-family: var(--font-family);
     margin-bottom: 0;
 }
+
+/* Pseudo-elements for my work section */
+.work-collection a:link {
+    text-decoration-color: var(--light-heading-color);
+}
+
+.work-collection a:hover {
+    box-shadow: 5px 10px 15px var(--highlight-color);
+}
+
+.work-collection a:visited {
+    text-decoration-color: var(--highlight-color);
+}
+
 
 /* Footer styling */
 footer p {
