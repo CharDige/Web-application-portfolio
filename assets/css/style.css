@@ -174,7 +174,7 @@ section {
 }
 
 .column {
-    flex: 50%;
+    width: 50%;
     padding: 5px;
 }
 
@@ -202,7 +202,23 @@ footer p {
     font-size: 12px;
 }
 
-/* Media queries for responsive header and navigation */
+/* Media queries for responsive web application - tablet */
+@media screen and (max-width: 992px) {
+    .paragraph-box {
+        position: static;
+        margin-left: var(--body-margin);
+        margin-right: 75px;
+    }
+
+    .work-collection {
+        top: 0;
+        left: 0;
+        margin-left: var(--body-margin);
+        margin-right: 75px;
+    }
+}
+
+/* Media queries for responsive web application for a large smartphones */
 @media screen and (max-width: 768px) {
     header {
         display: block;
@@ -215,21 +231,23 @@ footer p {
     nav ul {
         position: initial;
         margin-top: 15px;
-}
-
-/* Media queries of responsive main content */
-@media screen and (max-width: 768px) {
-    .paragraph-box {
-        position: static;
-        margin-left: var(--body-margin);
-        margin-right: 75px;
     }
-}}
 
-@media screen and (max-width: 768px) {
-    .feature-work {
-        top: 0;
-        left: 0;
-        margin-left: var(--body-margin);
-        margin-right: 75px;
-    }}
+    .paragraph-box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .work-collection {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .row-1, .row-2 {
+        display: initial;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
