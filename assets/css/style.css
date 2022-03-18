@@ -90,12 +90,12 @@ section {
     margin-top: 20px;
 }
 
-/* flex wrapping main content */
+/* Main-box margin */
 .main-box {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 10px;
 }
 
+/* Margins around the main box titles */
 .main-box-title {
     margin-left: var(--body-margin);
     margin-right: var(--body-margin);
@@ -120,26 +120,80 @@ section {
     left: 50px;
 }
 
-.work-collection .my-work-title {
-    color: var(--light-heading-color);
-    font-family: var(--font-family);
-    padding: 20px;
-    background-color: var(--dark-heading-color);
-    font-size: 16px;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
+.work-collection a {
+    text-decoration-color: var(--light-heading-color);
 }
 
-.work-collection .my-work-title h3 {
-    font-size: 20px;
-}
-
-.work-collection img {
+/* Feature work styling */
+.feature-work img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     border: 10px solid var(--dark-heading-color);
+}
+
+.feature-work .my-work-title {
+    color: var(--light-heading-color);
+    font-family: var(--font-family);
+    padding: 20px;
+    background-color: var(--dark-heading-color);
+    font-size: 20px;
+    position: relative;
+    bottom: 100px;
+    width: 100%
+}
+
+.feature-work .my-work-title p {
+    font-size: 16px;
+    color: var(--light-heading-color);
+    font-family: var(--font-family);
+    margin-bottom: 0;
+}
+
+/* Other portfolio work styling */
+.row-1 {
+    display: flex;
+}
+
+.row-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid var(--dark-heading-color);
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid var(--dark-heading-color);
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+
+.column .portfolio-title {
+    color: var(--light-heading-color);
+    font-family: var(--font-family);
+    padding: 20px;
+    background-color: var(--dark-heading-color);
+    font-size: 20px;
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+}
+
+.column .portfolio-title p {
+    font-size: 16px;
+    color: var(--light-heading-color);
+    font-family: var(--font-family);
+    margin-bottom: 0;
 }
 
 /* Footer styling */
@@ -171,3 +225,11 @@ footer p {
         margin-right: 75px;
     }
 }}
+
+@media screen and (max-width: 768px) {
+    .feature-work {
+        top: 0;
+        left: 0;
+        margin-left: var(--body-margin);
+        margin-right: 75px;
+    }}
