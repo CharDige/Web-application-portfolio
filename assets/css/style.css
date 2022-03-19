@@ -105,7 +105,7 @@ section {
     margin-right: var(--body-margin);
 }
 
-/* Main content styling for paragraphs */
+/* Main content styling for About Me and Contact Us content */
 .paragraph-box {
     margin-left: 250px;
     margin-right: var(--body-margin);
@@ -114,6 +114,16 @@ section {
     position: relative;
     top: -50px;
     left: 50px;
+}
+
+/* About me image styling */
+.paragraph-box img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border: 10px solid var(--dark-heading-color);
+    margin-bottom: 10px;
 }
 
 /* Styling for My Work section */
@@ -228,6 +238,10 @@ footer p {
         position: static;
         margin-left: var(--body-margin);
         margin-right: 75px;
+    }
+
+    .paragraph-box img {
+        width: 100%;
     }
 
     .work-collection {
