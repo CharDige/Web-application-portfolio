@@ -253,7 +253,10 @@ section {
 /* Footer styling */
 footer p {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
+    padding: 20px;
+    background-color: var(--dark-heading-color);
+    color: var(--light-heading-color);
 }
 
 /* Media queries for responsive web application - tablet */
