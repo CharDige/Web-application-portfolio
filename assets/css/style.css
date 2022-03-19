@@ -225,6 +225,30 @@ section {
     text-decoration-color: var(--highlight-color);
 }
 
+/* Contact me section styling */
+.paragraph-box .contact-me-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph-box .contact-me-details li {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--dark-heading-color);
+    line-height: 1.5em;
+}
+
+.paragraph-box .contact-me-details a {
+    color: #000;
+    text-decoration-color: #000;
+    font-weight: normal;
+}
+
+.paragraph-box .contact-me-details a:hover {
+    text-decoration: none;
+}
+
 
 /* Footer styling */
 footer p {
