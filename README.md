@@ -60,7 +60,7 @@ I then incorporated some of these CSS variables into the `::selection` CSS prope
 
 For the 'About me' and 'Contact me' sections, I used `Lorem Ipsum` placeholder text in `p` tags, and then I styled these sections as how I wanted them to look before I spent time on the text later on.
 
-A majority of my time was spent on the 'My Work' section. This included building the HTML and the responsive CSS properties. Halfway through the process, I realised I hadn't included a class properly in the HTML, which completely changed how my web application looked, so I spent quite a bit of time back-tracking at this point to get the web application looking like how I wanted to.
+A majority of my time was spent on the 'My Work' section. This included building the HTML and the responsive CSS properties. Halfway through the process, I realised I hadn't included a class properly in the HTML, which completely changed how my web application looked, so I spent quite a bit of time back-tracking at this point to get the web application looking like how I wanted it to.
 
 For the featured work, I used the week 1 project hero image and linked the tile to the deployed application, making it so it opened into a new tab as well. For the other four tiles, I used images I'd taken for personal projects (not web development related) and then used placeholder text and links to ensure the functionality was there for the project.
 
