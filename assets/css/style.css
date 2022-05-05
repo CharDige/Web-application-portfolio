@@ -105,7 +105,6 @@ section {
 /* Margins around the main box titles */
 .main-box-title {
     margin-left: var(--body-margin);
-    margin-right: var(--body-margin);
 }
 
 /* Main content styling for About Me and Contact Us content */
@@ -119,8 +118,14 @@ section {
     left: 50px;
 }
 
+/* About me styling */
+#about-me-row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* About me image styling */
-.paragraph-box img {
+.img-styling {
     width: 50%;
     height: 300px;
     object-fit: cover;
@@ -297,14 +302,13 @@ footer p {
         width: 60%;
     }
 
+    .main-box-title {
+        margin-left: auto;
+    }
+
     .navbar-separate-styling {
         position: initial;
         right: auto;
-    }
-
-    .paragraph-box {
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     .work-collection {
