@@ -5,7 +5,6 @@
     --highlight-color: #01fe44;
     --heading-font-family: 'Josefin Sans', sans-serif;
     --body-font-family: 'Quicksand', sans-serif;
-    --body-margin: 100px;
 }
 
 /* Highlight color and background */
@@ -26,7 +25,7 @@ header {
 
 /* H1 selector and styling */
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 0;
     width: 50%;
 }
@@ -42,7 +41,6 @@ h1 {
 }
 
 .nav-link-color:hover {
-    text-decoration: underline;
     color: var(--highlight-color);
 }
 
@@ -89,7 +87,7 @@ p {
 h2 {
     color: var(--dark-heading-color);
     font-family: var(--heading-font-family);
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 1.5rem;
 }
 
@@ -104,7 +102,7 @@ section {
 
 /* Margins around the main box titles */
 .main-box-title {
-    margin-left: var(--body-margin);
+    margin-left: 40px;
 }
 
 /* Main content styling for About Me and Contact Us content */
@@ -144,14 +142,6 @@ section {
     margin-top: 10px;
 }
 
-/* Styling for My Work section */
-.work-collection {
-    position: relative;
-    margin: 0 100px 0 250px;
-    top: -50px;
-    left: 50px;
-}
-
 /* Feature work styling */
 .feature-work img {
     width: 100%;
@@ -173,6 +163,16 @@ section {
     color: var(--light-heading-color);
     font-family: var(--body-font-family);
     margin-bottom: 0;
+}
+
+.feature-work .my-work-title a {
+    color: var(--light-heading-color);
+    text-decoration: underline;
+}
+
+.feature-work .my-work-title a:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
 }
 
 /* Other portfolio work styling */
@@ -198,17 +198,14 @@ section {
     margin-bottom: 0;
 }
 
-/* Pseudo-elements for my work section */
-.work-collection a:link {
-    text-decoration-color: var(--light-heading-color);
+.portfolio-title a {
+    color: var(--light-heading-color);
+    text-decoration: underline;
 }
 
-.work-collection a:hover {
-    box-shadow: 5px 10px 15px var(--highlight-color);
-}
-
-.work-collection a:visited {
-    text-decoration-color: var(--highlight-color);
+.portfolio-title a:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
 }
 
 /* Contact me section styling */
