@@ -3,7 +3,8 @@
     --dark-heading-color: #003204;
     --light-heading-color: #fff;
     --highlight-color: #01fe44;
-    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --heading-font-family: 'Josefin Sans', sans-serif;
+    --body-font-family: 'Quicksand', sans-serif;
     --body-margin: 100px;
 }
 
@@ -20,47 +21,23 @@ body {
 
 /* Header element styling */
 header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
     background-color: var(--dark-heading-color);
-    font-family: var(--font-family)
+    font-family: var(--heading-font-family)
 }
 
 /* H1 selector and styling */
 h1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%;
     font-size: 40px;
-    color: var(--light-heading-color);
+    margin-bottom: 0;
+    width: 50%;
 }
 
 /* Navigation element in header styling */
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
+.navbar-separate-styling {
     position: absolute;
     right: 0;
 }
 
-nav ul li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: var(--light-heading-color)
-}
-
-nav a:hover {
-    text-decoration: none;
-}
-
-nav li {
-    font-size: 20px;
-}
 
 /* Figure and hero image element selector and styling */
 figure #hero {
@@ -76,7 +53,7 @@ main {
 }
 
 p {
-    font-family: var(--font-family);
+    font-family: var(--body-font-family);
     color: #000;
     font-size: 16px;
     margin-bottom: 1.5rem;
@@ -85,7 +62,7 @@ p {
 
 h2 {
     color: var(--dark-heading-color);
-    font-family: var(--font-family);
+    font-family: var(--heading-font-family);
     font-size: 30px;
     margin-bottom: 1.5rem;
 }
@@ -148,7 +125,7 @@ section {
 
 .feature-work .my-work-title {
     color: var(--light-heading-color);
-    font-family: var(--font-family);
+    font-family: var(--heading-font-family);
     padding: 20px;
     background-color: var(--dark-heading-color);
     font-size: 20px;
@@ -160,7 +137,7 @@ section {
 .feature-work .my-work-title p {
     font-size: 16px;
     color: var(--light-heading-color);
-    font-family: var(--font-family);
+    font-family: var(--body-font-family);
     margin-bottom: 0;
 }
 
@@ -196,7 +173,7 @@ section {
 
 .column .portfolio-title {
     color: var(--light-heading-color);
-    font-family: var(--font-family);
+    font-family: var(--heading-font-family);
     padding: 20px;
     background-color: var(--dark-heading-color);
     font-size: 20px;
@@ -208,7 +185,7 @@ section {
 .column .portfolio-title p {
     font-size: 16px;
     color: var(--light-heading-color);
-    font-family: var(--font-family);
+    font-family: var(--body-font-family);
     margin-bottom: 0;
 }
 
@@ -261,6 +238,15 @@ footer p {
 
 /* Media queries for responsive web application - tablet */
 @media screen and (max-width: 992px) {
+    h1 {
+        width: 60%;
+    }
+
+    .navbar-separate-styling {
+        position: initial;
+        right: auto;
+    }
+
     .paragraph-box {
         position: static;
         margin-left: var(--body-margin);
@@ -281,17 +267,13 @@ footer p {
 
 /* Media queries for responsive web application for a large smartphones */
 @media screen and (max-width: 768px) {
-    header {
-        display: block;
-    }
-    
     h1 {
-        width: auto;
+        width: 60%;
     }
 
-    nav ul {
+    .navbar-separate-styling {
         position: initial;
-        margin-top: 15px;
+        right: auto;
     }
 
     .paragraph-box {
