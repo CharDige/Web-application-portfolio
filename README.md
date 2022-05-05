@@ -38,7 +38,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Technologies used
 
 - HTML
-- Bootstrap
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 - CSS
 
 ## The process
@@ -103,6 +103,4 @@ Rendle, R (2016, February 19), *A Quick Overview of 'object-fit' and 'object-pos
 
 ## License
 
-MIT License
-
-Copyright (C) 2022 Charlotte Dige
+[MIT License - Copyright (C) 2022 Charlotte Dige](./LICENSE)
