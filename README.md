@@ -37,8 +37,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Technologies used
 
-- HTML
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [Google Fonts](https://fonts.google.com/)
+- HTML
 - CSS
 
 ## The process
