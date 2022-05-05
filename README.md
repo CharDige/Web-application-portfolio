@@ -2,9 +2,10 @@
 
 ## About the project
 
-This project required the creation of a web application from scratch--no starter code--to build a portfolio page. The aim of building this portfolio page is so that it can be added to as more web applications and projects are created throughout this course.
+This project is my web application portfolio, which highlights who I am and showcases some of my web development work for employers to see. As I continue to develop and complete further projects, the more I will add to showcase my skills to potential future employers.
 
-The user story was:
+
+## User story
 
 ```
 AS AN employer
@@ -12,110 +13,66 @@ I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
 
-There was also a number of acceptance criteria that needed to be met. This included presenting my name, a recent photo, and links to each section; the UI to scroll when a link to a section of the website was selected (in particular, the link to the 'My Work' section); the first application being larger in size than the others; each portfolio link deploying the user to that web application; and a responsive layout.
+## Acceptance criteria
 
-Since this is only our second assignment and we're required to show a number of portfolio pieces within this web application for this project, I have included a few placeholder tiles (titled 'placeholder portfolio work #'), but will add more applications as I create them throughout this bootcamp. Due to this, I have also provided placeholder links, which link back to the same web application.
+```
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+```
 
-This is also the case for the resume link. However, this will include a PDF link to a final resume in future as the course continues.
+## Technologies used
+
+- HTML
+- Bootstrap
+- CSS
+
+## The process
+
+Initially, we created a portfolio page from scratch using the limited knowledge and experience we had. I've now been able to expand on this by using the CSS Framework Bootstrap to increase the responsiveness of the page and simplify the code.
+
+I also ensured I still kept my portfolio page looking a certain way that showed a bit of personalisation, such as including my favourite colour green prominently.
+
+### Wireframe
+
+When I first developed my initial portfolio, I created a wireframe of my desired structure. This is still similar to what I have in my currently updated portfolio, as it allows a clean and professional look.
+
+![Wireframe of web application project](./images/portfolio-wireframe.PNG)
+
+## Final
+
+![Scrolling through final web application in desktop view](./images/website-application-portfolio-runthrough.gif)
 
 > The final project can be found at: https://chardige.github.io/Web-application-portfolio/
 
 > The final HTML and CSS can be found at: https://github.com/CharDige/Web-application-portfolio
 
-## The process - how I approached this project
-
-### Wireframe
-
-After creating the GitHub repository and pushing through my initial commit of the HTML and CSS, I quickly planned out a basic wireframe for how I wanted my web application to flow. I wanted to make sure it wasn't too complicated to look at and used a good amount of white space.
-
-![Wireframe of web application project](./images/portfolio-wireframe.PNG)
-
-### Head
-
-After completing the wireframe, I mapped out my process to focus on each section separately.
-
-First, I filled out the required `DOCTYPE`, `HTML`, and `head`, then included an empty `body` element. While filling out the `head` element, I also linked a basic reset.css file I put together, plus linked the empty style.css file.
-
-![HTML of head element](./images/screenshot-head.PNG)
-
-I initially wanted to attempt each acceptance criteria separately as a checklist. However, I realised quickly that there was quite a bit I needed to create in the HTML and CSS first to start the process. Therefore, I decided to break down the task by each HTML element and work on each as I went.
-
-### Header
-
-Focussing on the `header` element first, I created the navigation structure in the HTML, and then begun the inital styling for the `header` and `nav`. This then followed with a `figure` as my hero image and the styling that came with this.
-
-I then worked on a couple of Media Queries for a responsive navigation, having a few troubles to begin with. However, with a little bit of initial research, I found the HTML and CSS properties I required.
-
-![HTML of header and navigation](./images/screenshot-header-nav-code.PNG)
-
-### CSS Variables
-
-I wanted the colours throughout my web application to match the colours in the figure image. As green is my favourite colour, I also wanted to make sure this was prominent but not overwhelming throughout the web application. I identified the hex colours for some aspects of the hero image and included these as CSS variables. I also included a `font-family` and `body-margin` in my CSS variables, which were decisions I made later on during this process.
-
-I then incorporated some of these CSS variables into the `::selection` CSS property later in the process.
-
-![CSS of CSS variables and selection CSS property](./images/screenshot-selection-root.PNG)
-
-### Sections
-
-For the 'About me' and 'Contact me' sections, I used `Lorem Ipsum` placeholder text in `p` tags, and then I styled these sections as how I wanted them to look before I spent time on the text later on.
-
-A majority of my time was spent on the 'My Work' section. This included building the HTML and the responsive CSS properties. Halfway through the process, I realised I hadn't included a class properly in the HTML, which completely changed how my web application looked, so I spent quite a bit of time back-tracking at this point to get the web application looking like how I wanted it to.
-
-For the featured work, I used the week 1 project hero image and linked the tile to the deployed application, making it so it opened into a new tab as well. For the other four tiles, I used images I'd taken for personal projects (not web development related) and then used placeholder text and links to ensure the functionality was there for the project.
-
-It took me a bit of time to figure out the best way to display my portfolio work tiles and to find the right CSS properties I needed to use. My biggest challenge was creating the responsive design with this section. Eventually, I had established the CSS properties and HTML structure I needed, and added in pseudo-elements to add in a little extra to the design and functionality of the web application.
-
-Below are a couple of screenshots of the HTML and CSS:
-
-**Part of the 'My Work' HTML**
-
-![HTML of part of the My Work section](./images/screenshot-my-work-html.PNG)
-
-**Part of the CSS for the 'My Work' section**
-
-![Part of the CSS for the feature work section](./images/screenshot-feature-work-css.PNG)
-
-**Pseudo-elements**
-
-![CSS of pseudo-elements in 'My Work' section](./images/screenshot-pseudo-css.PNG)
-
-**Media Queries**
-
-![CSS media queries for large smartphone](./images/screenshot-media-queries.PNG)
-
-I then spent time adding content into the 'About Me' and 'Contact Me' sections, as well as including pseudo-elements in the 'Contact Me' section.
-
-### Footer
-
-I kept the `footer` element very simple, leaving it as a copyright section with my name and the year. I then styled it to be similar as the `header`.
-
-## Final
-
-![Scrolling through final web application in desktop view](./images/website-final.gif)
-
-This can also be viewed at this link: https://chardige.github.io/Web-application-portfolio/
-
-And, the HTML and CSS can be viewed in the GitHub repository: https://github.com/CharDige/Web-application-portfolio
-
 ## Challenges
 
-I had quite a few challenges throughout this project, including organising the CSS properties in a way that made the web application responsive, and with using the `position` CSS property with the text in front of the images for each portfolio tile.
+In the initial creation of this portfolio, I faced many challenges to get the page displaying the way I wanted it to. This included using the `position` CSS property and building my confidence in using `flex`.
 
-There were a number of resources (referenced in the Credits section below) that I referred to that really helped me with using `flexbox`, `position` and more. I also found using Google Dev Tools really helpful with playing with solutions as I found them online to see if they helped solve some of the problems I encountered.
-
-One of the biggest challenges was having to back-track after not putting the right class to the right `div` element. This was missing the `main-box` class in the 'My Work' section, which then impacted a lot of the styling that I had worked on for a few hours. However, with a lot of patience and taking each step slowly, I was able to overcome this challenge.
+Updating this portfolio using what I've learnt so far in the course allowed me to remove some of the pain points in the code and still deliver a responsive and clean web application. The greatest challenge was ensuring all changes I made to implement Bootstrap didn't impact other functionality.
 
 ## What I learnt
 
-I have learnt a lot about using `div` elements in HTML and have felt myself become really confident in using a number of basic and advanced CSS properties.
+Between when I first created this portfolio to now, I have learnt a lot and have become more confident in being able to deliver responsive and clean web applications efficiently.
 
-At first, I was really hesitant in using `div` elements in my HTML as I knew that using too many could make the HTML look messy. However, once I realised how important they were in applying CSS and I became more confident in using CSS, I realised that `div` elements aren't anything to be worried or afraid about!
+I have also become a lot more confident in reading code without needing to look at the web application in a browser, which has helped streamline a lot of time in going back and forth between Google DevTools and VS Code.
 
 
 ## Credits
 
-I referred to a number of websites throughout this assignment to create my final web application. I have provided references to these pages below:
+I referred to a lot of websites when I initially created this portfolio. Although I didn't refer to them while updating this portfolio, I have kept them listed below as a reference:
 
 Coyier, C. (2022, February 20), *A Complete Guide to Flexbox*, CSS-Tricks, https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
