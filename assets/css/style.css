@@ -21,7 +21,6 @@ body {
 
 /* Header element styling */
 header {
-    background-color: var(--dark-heading-color);
     font-family: var(--heading-font-family)
 }
 
@@ -33,9 +32,36 @@ h1 {
 }
 
 /* Navigation element in header styling */
+.nav-bar-colours {
+    background-color: var(--dark-heading-color);
+    color: var(--light-heading-color);
+}
+
+.nav-link-color {
+    color: var(--light-heading-color);
+}
+
+.nav-link-color:hover {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
 .navbar-separate-styling {
     position: absolute;
-    right: 0;
+    right: 10px;
+    font-size: 20px;
+}
+
+.nav-bar-padding {
+    padding: 30px;
+}
+
+button {
+    color: var(--light-heading-color);
+}
+
+button:hover {
+    color: var(--highlight-color);
 }
 
 
