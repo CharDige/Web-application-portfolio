@@ -4,6 +4,10 @@
 
 This project is my web application portfolio, which highlights who I am and showcases some of my web development work for employers to see. As I continue to develop and complete further projects, the more I will add to showcase my skills to potential future employers.
 
+> The final project can be found at: https://chardige.github.io/Web-application-portfolio/
+
+> The final HTML and CSS can be found at: https://github.com/CharDige/Web-application-portfolio
+
 
 ## User story
 
