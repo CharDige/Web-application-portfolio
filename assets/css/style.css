@@ -134,6 +134,16 @@ section {
     margin-bottom: 10px;
 }
 
+/* My work styling */
+#my-work-row-1 {
+    margin: 0;
+}
+
+#my-work-row-2 {
+    margin: 0;
+    margin-top: 10px;
+}
+
 /* Styling for My Work section */
 .work-collection {
     position: relative;
@@ -143,13 +153,9 @@ section {
 }
 
 /* Feature work styling */
-.feature-work {
-    height: 525px;
-}
-
 .feature-work img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     border: 10px solid var(--dark-heading-color);
 }
@@ -160,9 +166,6 @@ section {
     padding: 20px;
     background-color: var(--dark-heading-color);
     font-size: 20px;
-    position: relative;
-    bottom: 100px;
-    width: 100%
 }
 
 .feature-work .my-work-title p {
@@ -173,47 +176,22 @@ section {
 }
 
 /* Other portfolio work styling */
-.row-1 {
-    display: flex;
-    height: 330px;
-}
-
-.row-1 img {
+.my-work-img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border: 10px solid var(--dark-heading-color);
 }
 
-.row-2 {
-    display: flex;
-    height: 330px;
-}
-
-.row-2 img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border: 10px solid var(--dark-heading-color);
-}
-
-.column {
-    width: 50%;
-    padding: 5px;
-}
-
-.column .portfolio-title {
+.portfolio-title {
     color: var(--light-heading-color);
     font-family: var(--heading-font-family);
     padding: 20px;
     background-color: var(--dark-heading-color);
     font-size: 20px;
-    position: relative;
-    bottom: 100px;
-    width: 100%;
 }
 
-.column .portfolio-title p {
+.portfolio-title p {
     font-size: 16px;
     color: var(--light-heading-color);
     font-family: var(--body-font-family);
@@ -287,13 +265,6 @@ footer p {
     .paragraph-box img {
         width: 100%;
     }
-
-    .work-collection {
-        top: 0;
-        left: 0;
-        margin-left: var(--body-margin);
-        margin-right: 75px;
-    }
 }
 
 /* Media queries for responsive web application for a large smartphones */
@@ -309,20 +280,5 @@ footer p {
     .navbar-separate-styling {
         position: initial;
         right: auto;
-    }
-
-    .work-collection {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .row-1, .row-2 {
-        display: initial;
-    }
-
-    .column {
-        width: 100%;
-        height: 330px;
-        padding: 0;
     }
 }
