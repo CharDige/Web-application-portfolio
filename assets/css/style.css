@@ -273,6 +273,10 @@ footer p {
         width: 60%;
     }
 
+    .img-styling {
+        width: 100%;
+    }
+
     .main-box-title {
         margin-left: auto;
     }
