@@ -46,7 +46,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Initially, we created a portfolio page from scratch using the limited knowledge and experience we had. I've now been able to expand on this by using the CSS Framework Bootstrap to increase the responsiveness of the page and simplify the code.
 
-I also ensured I still kept my portfolio page looking a certain way that showed a bit of personalisation, such as including my favourite colour green prominently.
+I also ensured I still kept my portfolio page looking a certain way that showed a bit of personalisation, such as including bright colours while also featuring some elements of green.
 
 ### Wireframe
 
