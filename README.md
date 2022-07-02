@@ -56,7 +56,7 @@ When I first developed my initial portfolio, I created a wireframe of my desired
 
 ## Final
 
-![Scrolling through final web application in desktop view](./images/website-application-portfolio-runthrough.gif)
+![Scrolling through final web application in desktop view](./images/updated-website-runthrough.gif)
 
 > The final project can be found at: https://chardige.github.io/Web-application-portfolio/
 
